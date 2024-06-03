@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Travel Enquiry Form</title>
+   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-AP9lCIKK9l34yjdBlobAv9-X6b-mFmY798ChtI&s">
+</head>
+   <body>
+    <h1 style="text-align: center;"><b>Travel Enquiry Form</b></h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td> <label>Name&nbsp;</label></td>
+                    <td><input type="text" placeholder="Your Name"></td>
+                </tr>
+                <tr>
+                    <td> <label>Email&nbsp;</label></td>
+                    <td><input type="email" placeholder="Email Address"></td>
+                </tr>
+                <tr>
+                    <td> <label>Contact&nbsp;</label></td>
+                    <td><input type="text" placeholder="Contact number"></td>
+                </tr>
+            </table>
+            <label>Gender</label>
+            <input type="radio" name="Gen"><label>Male</label>
+            <input type="radio" name="Gen"><label>Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Travel Preference</legend>
+            <input placeholder="From City">
+            <input placeholder="To City/Country">
+            <br>
+            <br>
+            <label>Budget per person</label>
+            <input type="range" min="1" max="100" step="10"><label>(₹40,000-₹1,00,000)</label>
+            <br>
+            <br>
+            <label>Duration (2N-11N)</label>
+            <input type="range" min="2" max="11" step="1">
+            <br>
+            <br>
+            <label>Hotel Category</label> 
+            <input type="checkbox"><label>3 &#9734;</label>
+            <input type="checkbox"><label>4 &#9734;</label>
+            <input type="checkbox"><label>5 &#9734;</label>
+            <br>
+            <br>
+            <label>Flights</label>
+            <input type="radio" name="f"><label>With Flights</label>
+            <input type="radio" name="f"><label>Without Flights</label>
+            <br>
+            <br>
+            <label>Theme&nbsp;&nbsp;</label>
+            <select>
+                <option>Piligrimage</option>
+                <option>Member</option>
+                <option>Person</option>
+            </select>
+            <br>
+            <br>
+            <label>Room Type</label>
+            <input list="rt">
+            <datalist id="rt">
+                    <option value="Ac">
+                    <option value="Non-ac">
+                    <option value="Tv-ac room">
+                    <option value="Tv-non-ac room">
+            </datalist>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>m
